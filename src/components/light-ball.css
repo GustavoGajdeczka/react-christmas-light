@@ -1,0 +1,121 @@
+.ball{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-inline: 15px;
+  position: relative;
+  transition: 1s all ease;
+}
+
+.ball:before{
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  left: 17.5px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: rgb(68, 53, 73);
+  border-radius: 2px;
+  display: inline-block;
+  border-bottom: 2px solid rgb(97, 81, 107);
+}
+.ball:after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 30px;
+  position: absolute;
+  width: 70px;
+  height: 18.6666666667px;
+  border-bottom: solid #222 2px;
+  border-radius: 50%;
+}
+
+
+@keyframes glow-red {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #c0392b;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-orange {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #ff8800;
+  }
+}
+
+@keyframes glow-yellow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #fae902;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-green {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #2ecc71;
+  }
+}
+
+@keyframes glow-blue {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #1902e9;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes glow-purple {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #6f04c7;
+  }
+}
+
+@keyframes glow-pink {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #eb7ee2;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@-webkit-keyframes main-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #c0392b, 0 0 60px #c0392b, 0 0 70px #c0392b;
+  }
+  25% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #f1c40f, 0 0 40px #ff4da6, 0 0 50px #f1c40f, 0 0 60px #f1c40f, 0 0 70px #f1c40f, 0 0 80px #ff4da6;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #74f7e1, 0 0 40px #74f7e1, 0 0 50px #74f7e1, 0 0 60px #74f7e1, 0 0 70px #74f7e1, 0 0 80px #74f7e1;
+  }
+  75% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71, 0 0 60px #2ecc71, 0 0 70px #2ecc71, 0 0 80px #2ecc71;
+  }
+}
